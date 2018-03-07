@@ -7,6 +7,7 @@ const Reset string = "%{F-}%{B-}"
 
 var Icons map[string]string
 var BspwmCommand []string
+var BspwmMonitors []string
 
 func init() {
 	Icons = map[string]string{
@@ -36,4 +37,5 @@ func init() {
 	}
 
 	BspwmCommand = []string{"bspc", "query", "-T", "-m"}
+	BspwmMonitors = []string{"bspc", "query", "-M"}
 }

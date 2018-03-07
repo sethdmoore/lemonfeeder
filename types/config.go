@@ -1,4 +1,4 @@
-package config
+package types
 
 import (
 	"github.com/kelseyhightower/envconfig"
@@ -13,7 +13,7 @@ type Config struct {
 	DesktopCount int
 }
 
-func New() (*Config, error) {
+func NewConfig() (*Config, error) {
 	var c Config
 	var err error
 
